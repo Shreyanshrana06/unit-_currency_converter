@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Unit Converter</h1>
+    </header>
+
+    <div class="converter-form">
+        <h2>Convert Units</h2>
+        
+        <!-- Length Conversion -->
+        <div class="form-group">
+            <h3>Length</h3>
+            <select id="unit-from-length">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="miles">Miles</option>
+                <option value="centimeters">Centimeters</option>
+                <option value="inches">Inches</option>
+                <option value="feet">Feet</option>
+            </select>
+            <span>to</span>
+            <select id="unit-to-length">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="miles">Miles</option>
+                <option value="centimeters">Centimeters</option>
+                <option value="inches">Inches</option>
+                <option value="feet">Feet</option>
+            </select>
+            <input type="number" id="unit-amount-length" placeholder="Enter amount">
+            <button id="convert-length">Convert</button>
+            <h3 id="length-result">Conversion Result: --</h3>
+        </div>
+        
+        <!-- Weight Conversion -->
+        <div class="form-group">
+            <h3>Weight</h3>
+            <select id="unit-from-weight">
+                <option value="grams">Grams</option>
+                <option value="kilograms">Kilograms</option>
+                <option value="pounds">Pounds</option>
+                <option value="ounces">Ounces</option>
+            </select>
+            <span>to</span>
+            <select id="unit-to-weight">
+                <option value="grams">Grams</option>
+                <option value="kilograms">Kilograms</option>
+                <option value="pounds">Pounds</option>
+                <option value="ounces">Ounces</option>
+            </select>
+            <input type="number" id="unit-amount-weight" placeholder="Enter amount">
+            <button id="convert-weight">Convert</button>
+            <h3 id="weight-result">Conversion Result: --</h3>
+        </div>
+        
+        <!-- Temperature Conversion -->
+        <div class="form-group">
+            <h3>Temperature</h3>
+            <select id="unit-from-temperature">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <span>to</span>
+            <select id="unit-to-temperature">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <input type="number" id="unit-amount-temperature" placeholder="Enter amount">
+            <button id="convert-temperature">Convert</button>
+            <h3 id="temperature-result">Conversion Result: --</h3>
+        </div>
+
+        <!-- Volume Conversion -->
+        <div class="form-group">
+            <h3>Volume</h3>
+            <select id="unit-from-volume">
+                <option value="liters">Liters</option>
+                <option value="milliliters">Milliliters</option>
+                <option value="gallons">Gallons</option>
+                <option value="cubic_meters">Cubic Meters</option>
+            </select>
+            <span>to</span>
+            <select id="unit-to-volume">
+                <option value="liters">Liters</option>
+                <option value="milliliters">Milliliters</option>
+                <option value="gallons">Gallons</option>
+                <option value="cubic_meters">Cubic Meters</option>
+            </select>
+            <input type="number" id="unit-amount-volume" placeholder="Enter amount">
+            <button id="convert-volume">Convert</button>
+            <h3 id="volume-result">Conversion Result: --</h3>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Converter Website</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
